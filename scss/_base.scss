@@ -1,0 +1,65 @@
+body {
+	background-color: yellow;
+	width: 100%;
+}
+
+
+
+#nouns{
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+
+	.word {
+		margin:20px;
+	}
+}
+
+#dropback {
+
+	.word {
+		margin: 20px;
+	}
+}
+
+
+
+.right {
+    float: right;
+    width: 37vw;
+    height: 100%;
+    display: block;
+
+
+}
+
+.wordgallery {
+	min-height: 800px;
+	height: 100%;
+	padding: 2vw;
+
+
+
+}
+
+#drophere {
+    position: absolute;
+    height: 100%;
+    width: 55vw;
+    float: left;
+    padding: 4vw;
+    background-color: white;
+
+    .word {
+    	margin: 20px;
+
+    }
+}
+
+// #dropback {
+// height: 100vh;
+// background-color: blue;
+
+
+// }

@@ -1,0 +1,51 @@
+/* line 1, ../scss/_base.scss */
+body {
+  background-color: yellow;
+  width: 100%;
+}
+
+/* line 8, ../scss/_base.scss */
+#nouns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* line 14, ../scss/_base.scss */
+#nouns .word {
+  margin: 20px;
+}
+
+/* line 21, ../scss/_base.scss */
+#dropback .word {
+  margin: 20px;
+}
+
+/* line 28, ../scss/_base.scss */
+.right {
+  float: right;
+  width: 37vw;
+  height: 100%;
+  display: block;
+}
+
+/* line 37, ../scss/_base.scss */
+.wordgallery {
+  min-height: 800px;
+  height: 100%;
+  padding: 2vw;
+}
+
+/* line 46, ../scss/_base.scss */
+#drophere {
+  position: absolute;
+  height: 100%;
+  width: 55vw;
+  float: left;
+  padding: 4vw;
+  background-color: white;
+}
+/* line 54, ../scss/_base.scss */
+#drophere .word {
+  margin: 20px;
+}
