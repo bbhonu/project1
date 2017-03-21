@@ -40,35 +40,22 @@ function getNouns() {
 function theNouns(){
 	// console.log(nouns);
 	for(i=0; i<nouns.length;i++){
+
+		//each word goes in it's own span, gets unique id, class name of word.
 		var newElement=document.createElement('span');
 		newElement.id=nouns[i].id; newElement.className="word";
 		newElement.innerHTML=nouns[i].word;
 		document.getElementById('nouns').appendChild(newElement);
+
+		//drag and drop for nouns
 		newElement.setAttribute("draggable","true");
 		newElement.addEventListener("dragstart", drag);
+
 		console.log(nouns[i].word);
-
-
-
-
-		// document.getElementById("nouns").innerHTML+=(nouns[i].word ); 
-
-		//add an html element for each item 
 	}
 }
 
-// function dragNouns(){
-// 	 for(var i=0; i< nouns.length; i++) {
-// 	 			nouns[i].word.addEventListener("dragstart", drag);
 
-//  }
-
-//  function bindClick(i) {
-//     return function(){
-//              console.log("you clicked region number " + i);
-//            };
-//  }
-// }
 
 function getVerbs() {
 	var url = "http://api.wordnik.com/v4/words.json/randomWords?hasDictionaryDef=true&includePartOfSpeech=adjective&minCorpusCount=0&maxCorpusCount=-1&minDictionaryCount=50&maxDictionaryCount=100&minLength=0&maxLength=8&sortBy=alpha&sortOrder=asc&limit=70&api_key=8c5e16a77ad41ee83c00a04a8760c80ce83ae19ce509db930";
