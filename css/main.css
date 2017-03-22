@@ -1,51 +1,55 @@
 /* line 1, ../scss/_base.scss */
 body {
-  background-color: yellow;
+  background-color: #bdc6ff;
   width: 100%;
 }
 
-/* line 8, ../scss/_base.scss */
+/* line 6, ../scss/_base.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 10, ../scss/_base.scss */
+.word {
+  margin: 20px;
+  padding: 3px 6px;
+  background-color: white;
+  border: solid .05px black;
+}
+
+/* line 20, ../scss/_base.scss */
 #nouns {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-/* line 14, ../scss/_base.scss */
-#nouns .word {
-  margin: 20px;
-}
 
-/* line 21, ../scss/_base.scss */
-#dropback .word {
-  margin: 20px;
-}
-
-/* line 28, ../scss/_base.scss */
+/* line 38, ../scss/_base.scss */
 .right {
+  min-height: 700px;
   float: right;
-  width: 37vw;
+  width: 44vw;
   height: 100%;
   display: block;
 }
 
-/* line 37, ../scss/_base.scss */
+/* line 48, ../scss/_base.scss */
 .wordgallery {
-  min-height: 800px;
   height: 100%;
-  padding: 2vw;
+  padding: 4vw;
 }
 
-/* line 46, ../scss/_base.scss */
-#drophere {
+/* line 56, ../scss/_base.scss */
+#poetryzone {
   position: absolute;
   height: 100%;
   width: 55vw;
   float: left;
-  padding: 4vw;
   background-color: white;
 }
-/* line 54, ../scss/_base.scss */
-#drophere .word {
-  margin: 20px;
+/* line 63, ../scss/_base.scss */
+#poetryzone #drophere {
+  padding: 4vw;
+  height: 80%;
 }

@@ -1,5 +1,5 @@
-var baseUrl = "http://api.wordnik.com/v4/words.json/";
-var apiKey = "8c5e16a77ad41ee83c00a04a8760c80ce83ae19ce509db930";
+// var baseUrl = "http://api.wordnik.com/v4/words.json/";
+// var apiKey = "8c5e16a77ad41ee83c00a04a8760c80ce83ae19ce509db930";
 
 var nouns;
 
@@ -136,9 +136,4 @@ function getConjunctions() {
 					console.log ("getPronouns: url == " + url + ", error == " + JSON.stringify (status, undefined, 4));
 					});
 }
-
-
-
-//loop through array and create an html element for each item
-// for(var i<0; i<)
 

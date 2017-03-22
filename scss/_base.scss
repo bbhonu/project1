@@ -1,7 +1,19 @@
 body {
-	background-color: yellow;
+	background-color: #bdc6ff;
 	width: 100%;
 }
+
+*,*:before,*:after {
+	box-sizing:border-box
+}
+
+	.word {
+		margin:20px;
+		padding: 3px 6px;
+		background-color: white;
+		border: solid .05px black;
+
+	}
 
 
 
@@ -11,23 +23,22 @@ body {
 	flex-wrap:wrap;
 	justify-content:space-between;
 
-	.word {
-		margin:20px;
-	}
+
 }
 
-#dropback {
+// #dropback {
 
-	.word {
-		margin: 20px;
-	}
-}
+// 	.word {
+// 		margin: 20px;
+// 	}
+// }
 
 
 
 .right {
+	min-height: 700px;
     float: right;
-    width: 37vw;
+    width: 44vw;
     height: 100%;
     display: block;
 
@@ -35,26 +46,26 @@ body {
 }
 
 .wordgallery {
-	min-height: 800px;
 	height: 100%;
-	padding: 2vw;
+	padding: 4vw;
 
 
 
 }
 
-#drophere {
+#poetryzone {
     position: absolute;
     height: 100%;
     width: 55vw;
     float: left;
-    padding: 4vw;
     background-color: white;
 
-    .word {
-    	margin: 20px;
+    #drophere {
+   	padding: 4vw;
+   	height: 80%;
 
     }
+
 }
 
 // #dropback {
